@@ -81,11 +81,19 @@ function addToOrder(itemName, price) {
 
     orderItem.textContent = `${itemName} - ${currencySymbol} ${price.toFixed(2)}`;
 
-    // Append the list item to the order items list
 
+
+// Append the list item to the order items list
+    orderItemsList.appendChild(orderItem);
+
+    
     // Calculate and update the total price
+    totalPrice += price;
 
-    // Update the text content of the order total element with the new total
+    // Set the text content of the list item to the item name
+    orderTotalElement.textContent = totalPrice.toFixed(2);
+ // Update the text content of the order total element with the new total
+}
 }
 
 // Function to initialize the menu system
