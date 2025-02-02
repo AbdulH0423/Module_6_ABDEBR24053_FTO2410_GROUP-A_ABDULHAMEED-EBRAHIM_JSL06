@@ -94,6 +94,24 @@ function addToOrder(itemName, price) {
     orderTotalElement.textContent = totalPrice.toFixed(2);
  // Update the text content of the order total element with the new total
 }
+
+
+//Function to remove
+
+function removeFromOrder(orderItem, price){
+
+    const orderItemsList = document.getElementById("order-items");
+    const orderTotalElement = document.getElementById("order-total");
+
+
+    //Removing the order item
+
+    orderItemsList.removeChild(orderItem);
+
+    //Update the price
+
+    totalPrice -= price;
+    orderTotalElement.textContent = `${totalPrice.toFixed(2)}`;
 }
 
 // Function to initialize the menu system
