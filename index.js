@@ -18,6 +18,7 @@ let totalPrice = 0;
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
+    const menuContainer = document.getElementById("menu");
 
     // Loop through each category and its items in the menu object
 
