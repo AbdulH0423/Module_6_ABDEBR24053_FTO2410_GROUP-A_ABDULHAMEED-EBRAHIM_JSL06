@@ -82,6 +82,9 @@ function addToOrder(itemName, price) {
     orderItem.textContent = `${itemName} - ${currencySymbol} ${price.toFixed(2)}`;
 
 
+    //Added an event listner to remove items
+    orderItem.addEventListener("click", () => removeFromOrder(orderItem, price));
+
 
 // Append the list item to the order items list
     orderItemsList.appendChild(orderItem);
