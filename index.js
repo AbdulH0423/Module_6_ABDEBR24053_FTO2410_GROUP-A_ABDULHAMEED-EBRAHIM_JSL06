@@ -1,8 +1,10 @@
 // Sample menu data (Consider fetching this data from a server in a real-world scenario)
+
+//Changed from an array to an object with prices.
 const menu = {
-    Starters: ["Garlic Bread", "Bruschetta"],
-    MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
-    Desserts: ["Tiramisu", "Cheesecake"]
+    Starters: { "Garlic Bread": 50.00, "Bruschetta": 62.00, "Caprese Salad": 65.00, "Focaccia": 41.50 },
+    MainCourses: { "Margherita Pizza": 109.99, "Spaghetti Carbonara": 132.00, "Chicken Parmesan": 192.00, "Paella": 210.50},
+    Desserts: { "Tiramisu": 69.79, "Cheesecake": 99.00, "Chocolate Mousse": 68.00, "Gelato Roma": 49.50}
 };
 
 // Function to display menu items by category
