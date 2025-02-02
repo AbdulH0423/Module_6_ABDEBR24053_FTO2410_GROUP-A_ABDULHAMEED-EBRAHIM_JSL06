@@ -11,6 +11,10 @@ const menu = {
 const currencySymbol = "R";
 
 
+//Set total price to zero intially
+let totalPrice = 0;
+
+
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
