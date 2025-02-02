@@ -7,6 +7,10 @@ const menu = {
     Desserts: { "Tiramisu": 69.79, "Cheesecake": 99.00, "Chocolate Mousse": 68.00, "Gelato Roma": 49.50}
 };
 
+
+const currencySymbol = "R";
+
+
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
